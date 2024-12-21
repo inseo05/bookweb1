@@ -1,0 +1,85 @@
+.sprout-icon7 {
+  height: 55.3px;
+  width: 50.5px;
+  position: relative;
+  object-fit: cover;
+  z-index: 2;
+}
+.grus5 {
+  text-decoration: none;
+  flex: 1;
+  position: relative;
+  color: inherit;
+  z-index: 2;
+}
+.logo {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.logo-container1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0px var(--padding-2xs) 0px 0px;
+}
+.ant-designheart-filled5 {
+  width: 22.3px;
+  height: 22.3px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: none;
+}
+.side-bar3 {
+  flex: 1;
+  border-radius: var(--br-3xs) 0px 0px var(--br-3xs);
+  background-color: var(--color-white);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-19xl) var(--padding-47xl) var(--padding-502xl)
+    var(--padding-33xl);
+  gap: var(--gap-94xl);
+  z-index: 1;
+  text-align: left;
+  font-size: var(--font-size-29xl);
+  color: var(--color);
+  font-family: var(--font-chelsea-market);
+}
+
+@media screen and (max-width: 1100px) {
+  .side-bar3 {
+    padding-top: var(--padding-995xl);
+    padding-bottom: var(--padding-320xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 750px) {
+  .grus5 {
+    font-size: var(--font-size-19xl);
+  }
+
+  .side-bar3 {
+    padding-bottom: var(--padding-201xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .grus5 {
+    font-size: var(--font-size-10xl);
+  }
+
+  .side-bar3 {
+    gap: var(--gap-37xl);
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}

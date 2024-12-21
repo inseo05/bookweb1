@@ -1,0 +1,18 @@
+.my-shelf1 {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-xl);
+  font-weight: 400;
+  font-family: var(--font-inter);
+  color: var(--color);
+  text-align: left;
+  display: inline-block;
+  min-width: 65px;
+}
+
+@media screen and (max-width: 450px) {
+  .my-shelf1 {
+    font-size: var(--font-size-base);
+  }
+}

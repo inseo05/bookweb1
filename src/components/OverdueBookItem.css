@@ -1,0 +1,141 @@
+.pending-placeholder-icon {
+  height: 99px;
+  width: 75px;
+  position: relative;
+  border-radius: var(--br-8xs);
+  object-fit: cover;
+  z-index: 1;
+}
+.the-design-of2 {
+  align-self: stretch;
+  position: relative;
+  line-height: 128.52%;
+  z-index: 1;
+}
+.don-norman-19882 {
+  width: 208px;
+  position: relative;
+  font-size: var(--font-size-mini);
+  line-height: 128.52%;
+  display: inline-block;
+  z-index: 1;
+}
+.overdue-book-title-author {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+  min-width: 158px;
+}
+.overdue-book-details {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+}
+.over-due1 {
+  color: var(--color-crimson);
+}
+.returned-from-user {
+  align-self: stretch;
+  position: relative;
+  line-height: 128.52%;
+  white-space: nowrap;
+  z-index: 1;
+}
+.overdue-date {
+  width: 114px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) 0px 0px;
+  box-sizing: border-box;
+}
+.frame-child53 {
+  height: 40px;
+  width: 125px;
+  position: relative;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-tomato-100);
+  box-sizing: border-box;
+  display: none;
+}
+.return {
+  flex: 1;
+  position: relative;
+  line-height: 128.52%;
+  font-weight: 600;
+  z-index: 1;
+}
+.rectangle-parent33 {
+  flex: 1;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-tomato-100);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-6xs) var(--padding-xs) var(--padding-5xs)
+    var(--padding-base);
+  min-width: 81px;
+  min-height: 40px;
+  z-index: 1;
+  text-align: center;
+  font-size: var(--font-size-mini);
+  color: var(--color-tomato-100);
+}
+.overdue-book-date {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  row-gap: 20px;
+}
+.overdue-book-status {
+  width: 243px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px var(--padding-11xs);
+  box-sizing: border-box;
+  font-size: var(--font-size-smi);
+  color: var(--color-dimgray-100);
+}
+.overdue-book-item {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-6xs);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-dimgray);
+  font-family: var(--font-inter);
+}
+
+@media screen and (max-width: 450px) {
+  .the-design-of2 {
+    font-size: var(--font-size-base);
+    line-height: 21px;
+  }
+
+  .overdue-book-details {
+    gap: var(--gap-base);
+    flex-wrap: wrap;
+  }
+
+  .overdue-book-date {
+    flex-wrap: wrap;
+  }
+}

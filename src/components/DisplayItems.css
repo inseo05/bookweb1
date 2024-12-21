@@ -1,0 +1,51 @@
+.display-items-child {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-8xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.the-design-of1 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-xs);
+  line-height: 128.52%;
+}
+.don-norman-19881 {
+  width: 102px;
+  position: relative;
+  line-height: 128.52%;
+  display: inline-block;
+}
+.span2 {
+  color: var(--color-darkgray);
+}
+.the-design-of-every-group {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+}
+.display-items {
+  width: 160px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-mini) var(--padding-mini) var(--padding-smi);
+  box-sizing: border-box;
+  gap: var(--gap-xs-2);
+  text-align: left;
+  font-size: var(--font-size-3xs);
+  color: var(--color-dimgray);
+  font-family: var(--font-inter);
+}

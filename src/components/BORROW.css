@@ -1,0 +1,24 @@
+.borrow {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  font-size: var(--font-size-xl);
+  line-height: 12px;
+  font-weight: 600;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 189px;
+  height: 48px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 450px) {
+  .borrow {
+    font-size: var(--font-size-base);
+    line-height: 10px;
+  }
+}

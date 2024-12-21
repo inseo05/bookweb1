@@ -1,0 +1,97 @@
+.heroicons-minihome1 {
+  height: 23px;
+  width: 23px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.home2 {
+  flex: 1;
+  position: relative;
+}
+.home-menu1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+  cursor: pointer;
+}
+.search-icon5 {
+  height: 23px;
+  width: 23px;
+  position: relative;
+}
+.search-menu1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px var(--padding-12xs);
+  gap: var(--gap-2xs);
+}
+.bookshelf-icon1 {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.my-shelf-menu1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px var(--padding-10xs);
+  gap: var(--gap-xs);
+  cursor: pointer;
+}
+.sprout-icon4 {
+  height: 17px;
+  width: 11px;
+  position: relative;
+  object-fit: cover;
+}
+.primary-navigation {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px var(--padding-6xs);
+  gap: var(--gap-xs);
+  cursor: pointer;
+}
+.favourite-menu1 {
+  align-self: stretch;
+  height: 25px;
+}
+.side-menu3 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-15xl);
+}
+.side-menu2 {
+  width: 174px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 1;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color);
+  font-family: var(--font-inter);
+}
+
+@media screen and (max-width: 450px) {
+  .home2 {
+    font-size: var(--font-size-base);
+  }
+}

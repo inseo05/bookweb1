@@ -1,0 +1,99 @@
+.book-availability-child {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-8xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.the-design-of {
+  position: relative;
+  line-height: 128.52%;
+}
+.don-norman-1988 {
+  width: 102px;
+  position: relative;
+  font-size: var(--font-size-3xs);
+  line-height: 128.52%;
+  display: inline-block;
+}
+.the-design-of-every-parent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+  flex-shrink: 0;
+}
+.frame-child33 {
+  height: 20.1px;
+  width: 60.4px;
+  position: relative;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-forestgreen);
+  display: none;
+}
+.div27 {
+  flex: 1;
+  position: relative;
+  line-height: 12px;
+  font-weight: 600;
+}
+.wrapper3 {
+  width: 54.3px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  z-index: 1;
+}
+.rectangle-parent20 {
+  border-radius: var(--br-8xs);
+  background-color: var(--color-forestgreen);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs) var(--padding-11xs) var(--padding-10xs-3);
+  flex-shrink: 0;
+}
+.frame-wrapper11 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px var(--padding-11xl);
+  text-align: center;
+  font-size: var(--font-size-3xs);
+  color: var(--color-white);
+}
+.frame-parent16 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+}
+.book-availability1 {
+  height: 260px;
+  width: 160px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-mini) var(--padding-mini) var(--padding-9xs-9);
+  box-sizing: border-box;
+  gap: var(--gap-xs-2);
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-dimgray);
+  font-family: var(--font-inter);
+}

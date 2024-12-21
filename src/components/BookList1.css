@@ -1,0 +1,23 @@
+.book-list1 {
+  width: 1553px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  gap: 108px 39px;
+  min-height: 628px;
+  flex-shrink: 0;
+  max-width: 105%;
+  text-align: left;
+  font-size: var(--font-size-3xs);
+  color: var(--color-dimgray);
+  font-family: var(--font-inter);
+}
+
+@media screen and (max-width: 950px) {
+  .book-list1 {
+    gap: var(--gap-lgi);
+  }
+}
