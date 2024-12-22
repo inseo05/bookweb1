@@ -11,6 +11,7 @@ import Frame1 from "./pages/Frame";
 import Login from "./pages/Login";
 import MyShelf from "./pages/MyShelf";
 import Frame from "./pages/Frame1";
+import Control from "./pages/Control";
 
 function App() {
   const action = useNavigationType();
@@ -76,6 +77,7 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/my-shelf" element={<MyShelf />} />
       <Route path="/1" element={<Frame />} />
+      <Route path="/control" element={<Control/> } />
     </Routes>
   );
 }
