@@ -1,4 +1,5 @@
 import { useState, useCallback } from "react";
+import { useNavigate } from "react-router-dom"; // useNavigate 훅을 임포트
 import Root from "./Root";
 import PortalPopup from "./PortalPopup";
 import PropTypes from "prop-types";
@@ -6,6 +7,10 @@ import "./GroupComponent1.css";
 
 const GroupComponent1 = ({ className = "" }) => {
   const [isFrameOpen, setFrameOpen] = useState(false);
+  const [name, setName] = useState("");  // 이름 상태
+  const [studentId, setStudentId] = useState("");  // 학번 상태
+
+  const navigate = useNavigate(); // useNavigate 훅을 사용하여 navigate 함수 생성
 
   const openFrame = useCallback(() => {
     setFrameOpen(true);
@@ -14,6 +19,19 @@ const GroupComponent1 = ({ className = "" }) => {
   const closeFrame = useCallback(() => {
     setFrameOpen(false);
   }, []);
+
+  const handleNameChange = (event) => {
+    setName(event.target.value); // 이름 변경 함수
+  };
+
+  const handleStudentIdChange = (event) => {
+    setStudentId(event.target.value); // 학번 변경 함수
+  };
+
+  // 회원 확인 버튼 클릭 시 홈 페이지로 이동하는 함수
+  const handleLoginClick = () => {
+    navigate("/"); // Home 페이지로 이동
+  };
 
   return (
     <>
@@ -45,38 +63,29 @@ const GroupComponent1 = ({ className = "" }) => {
             <div className="email-password">
               <div className="div">이름</div>
               <div className="input-fields">
-                <div className="usernamecollegenameacin1">
-                  username@collegename.ac.in
-                </div>
+                <input
+                  type="text"
+                  value={name} // 상태 값을 입력 필드에 바인딩
+                  onChange={handleNameChange} // 값 변경시 상태 업데이트
+                  placeholder="이름을 입력하세요"
+                />
               </div>
             </div>
             <div className="email-password">
               <div className="div">{`학번 `}</div>
               <div className="frame-parent22">
-                <div className="username-input-wrapper">
-                  <div className="username-input">
-                    <div className="username-input-child" />
-                    <div className="username-input-child" />
-                    <div className="username-input-child" />
-                    <div className="username-input-child" />
-                    <div className="username-input-child" />
-                    <div className="username-input-child" />
-                    <div className="username-input-child" />
-                    <div className="username-input-child" />
-                  </div>
-                </div>
-                <img
-                  className="eye-off1"
-                  loading="lazy"
-                  alt=""
-                  src="/eye--off.svg"
+                <input
+                  type="text"
+                  value={studentId} // 상태 값을 입력 필드에 바인딩
+                  onChange={handleStudentIdChange} // 값 변경시 상태 업데이트
+                  placeholder="학번을 입력하세요"
                 />
               </div>
             </div>
           </div>
         </div>
         <div className="input-fields1">
-          <div className="button-login2">
+          <div className="button-login2" onClick={handleLoginClick}>
             <div className="div41">회원 확인</div>
           </div>
           <div className="wrapper6" onClick={openFrame}>

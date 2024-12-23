@@ -1,3 +1,95 @@
+.rectangle-parent34 {
+  position: relative; /* 중앙 배치 및 상대 위치 */
+  max-width: 400px;
+  margin: 0 auto; /* 전체 중앙 정렬 */
+  padding: 20px;
+  background-color: var(--color-white);
+  border-radius: var(--br-3xs);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  font-size: var(--font-size-xl);
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.date-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 날짜 섹션 전체 중앙 정렬 */
+  gap: 20px; /* 섹션 간 간격 */
+  margin-top: 200px; /* 상단 제목과의 간격 */
+  margin-bottom: 200px; /* 버튼과의 간격 */
+}
+
+.date-section {
+  width: 100%; /* 섹션 전체 너비 */
+  max-width: 350px; /* 적절한 중앙 너비 설정 */
+  text-align: center;
+}
+
+.date-label {
+  display: block;
+  margin-bottom: 15px; /* 텍스트와 입력 필드 간격 */
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--color-black);
+}
+
+.date-picker {
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid var(--color-lightgray);
+  text-align: center;
+  background-color: var(--color-whitesmoke-200);
+  border-radius: var(--br-7xs);
+  padding: 8px;
+  cursor: pointer;
+}
+
+
+.borrow-button {
+  position: absolute;
+  top: 715px;
+  left: 141px;
+  background-color: var(--color-3);
+  color: white;
+  padding: 20px 20px;
+  border: none;
+  border-radius: var(--br-8xs);
+  cursor: pointer;
+  font-size: var(--font-size-xl);
+  text-align: center;
+  width: 209px; /* 버튼 고정 크기 */
+  height: 61px; /* 버튼 고정 높이 */
+  z-index: 1;
+}
+
+
+
+.div1 {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.rectangle-parent42 {
+  margin: 10px auto; /* 상하 여백 추가 및 중앙 정렬 */
+  border: 1px solid var(--color-lightgray);
+  padding: 10px;
+  border-radius: var(--br-3xs);
+  color: var(--color-darkgray-300);
+  font-size: 14px;
+  text-align: center;
+  width: 90%; /* 적절한 너비 설정 */
+  max-width: 300px; /* 너무 넓지 않게 제한 */
+  box-sizing: border-box; /* 패딩 포함한 크기 설정 */
+}
+
+
 .frame-child54 {
   position: absolute;
   top: 0px;
@@ -122,19 +214,8 @@
   height: 100%;
   display: none;
 }
-.rectangle-parent38 {
-  position: absolute;
-  top: 715px;
-  left: 141px;
-  border-radius: var(--br-8xs);
-  background-color: var(--color-3);
-  width: 209px;
-  height: 61px;
-  cursor: pointer;
-  z-index: 1;
-  font-size: var(--font-size-xl);
-  color: var(--color-white);
-}
+
+
 .b {
   position: absolute;
   top: 16px;

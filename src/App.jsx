@@ -7,22 +7,25 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home";
 import Search from "./pages/Search";
-import Frame1 from "./pages/Frame";
+import Frame from "./pages/Frame";
 import Login from "./pages/Login";
 import MyShelf from "./pages/MyShelf";
-import Frame from "./pages/Frame1";
+import Frame1 from "./pages/Frame1";
 
 function App() {
   const action = useNavigationType();
   const location = useLocation();
   const pathname = location.pathname;
 
+  //페이지 이동할 때 화면 맨 위로 스크롤
   useEffect(() => {
     if (action !== "POP") {
       window.scrollTo(0, 0);
     }
   }, [action, pathname]);
 
+  //현재 경로에 따라 페이지의 <title>과 
+  //메타 설명(<meta name="description">)을 동적으로 설정.
   useEffect(() => {
     let title = "";
     let metaDescription = "";
@@ -72,10 +75,11 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/search" element={<Search />} />
-      <Route path="/" element={<Frame1 />} />
+      <Route path="/2" element={<Frame1 />} /> 
       <Route path="/login" element={<Login />} />
       <Route path="/my-shelf" element={<MyShelf />} />
       <Route path="/1" element={<Frame />} />
+      
     </Routes>
   );
 }

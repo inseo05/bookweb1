@@ -1,4 +1,5 @@
 import { useMemo } from "react";
+import { useNavigate } from "react-router-dom"; // useNavigate 훅 추가
 import PropTypes from "prop-types";
 import "./BookAvailability1.css";
 
@@ -14,6 +15,8 @@ const BookAvailability1 = ({
   donNorman1988MinWidth,
   frameDivAlignSelf,
 }) => {
+  const navigate = useNavigate(); // navigate 훅 사용
+
   const theDesignOfStyle = useMemo(() => {
     return {
       alignSelf: theDesignOfAlignSelf,
@@ -40,6 +43,11 @@ const BookAvailability1 = ({
     };
   }, [frameDivAlignSelf]);
 
+  // 대여가능 클릭 시 이동
+  const handleRentClick = () => {
+    navigate("/2");
+  };
+
   return (
     <div className={`book-availability1 ${className}`}>
       <img
@@ -60,7 +68,7 @@ const BookAvailability1 = ({
         <div className="frame-wrapper11">
           <div className="rectangle-parent20">
             <div className="frame-child33" />
-            <div className="wrapper3">
+            <div className="wrapper3" onClick={handleRentClick}> {/* 클릭 시 이동 */}
               <div className="div27">대여가능</div>
             </div>
           </div>
