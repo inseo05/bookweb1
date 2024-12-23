@@ -12,6 +12,9 @@ import Login from "./pages/Login";
 import MyShelf from "./pages/MyShelf";
 import Frame1 from "./pages/Frame1";
 import Control from "./pages/Control";
+import RentalC from "./components/Root2" //대여완료
+import ReturnC from "./components/Root3" //반납완료
+
 
 function App() {
   const action = useNavigationType();
@@ -87,6 +90,10 @@ function App() {
       <Route path="/my-shelf" element={<MyShelf />} />
       <Route path="/1" element={<Frame />} />
       <Route path="/control" element={<Control />} />
+      <Route path="/rentalcomplete" element={<RentalC />} />
+      <Route path="/returncomplete" element={<ReturnC />} />
+
+
     </Routes>
   );
 }

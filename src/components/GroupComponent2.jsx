@@ -10,7 +10,7 @@ const GroupComponent2 = ({ className = "" }) => {
   const navigate = useNavigate(); // useNavigate 훅 사용
 
   const handleBorrowComplete = () => {
-    navigate("/"); // "/" 경로로 이동
+    navigate("/complete"); // "/" 경로로 이동
   };
 
   return (
