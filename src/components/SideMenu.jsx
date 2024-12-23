@@ -24,16 +24,17 @@ const SideMenu = ({
 
   const navigate = useNavigate();
 
+  // "Home" 클릭 시 "/" 경로로 이동
   const onHomeMenuContainerClick = useCallback(() => {
-    // Please sync "Home" to the project
-  }, []);
+    navigate("/"); // "/ 경로로 이동
+  }, [navigate]);
 
   const onMyShelfMenuClick = useCallback(() => {
     navigate("/my-shelf");
   }, [navigate]);
 
   const onPrimaryNavigationContainerClick = useCallback(() => {
-    // Please sync "관리자 페이지" to the project
+    // "관리자 페이지" 이동 구현 필요 시 추가
   }, []);
 
   return (
