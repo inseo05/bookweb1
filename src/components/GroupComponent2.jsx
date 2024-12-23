@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom"; // useNavigate 가져오기
+import { useNavigate } from "react-router-dom";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import "./GroupComponent2.css";
@@ -7,10 +7,10 @@ import "./GroupComponent2.css";
 const GroupComponent2 = ({ className = "" }) => {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
-  const navigate = useNavigate(); // useNavigate 훅 사용
+  const navigate = useNavigate();
 
   const handleBorrowComplete = () => {
-    navigate("/complete"); // "/" 경로로 이동
+    navigate("/rentalcomplete");
   };
 
   return (
@@ -26,7 +26,8 @@ const GroupComponent2 = ({ className = "" }) => {
             selected={startDate}
             onChange={(date) => setStartDate(date)}
             className="date-picker"
-            popperPlacement="bottom"
+            popperPlacement="bottom-start"
+            popperClassName="custom-datepicker-popper" // 사용자 정의 클래스 추가
           />
         </div>
 
@@ -36,7 +37,8 @@ const GroupComponent2 = ({ className = "" }) => {
             selected={endDate}
             onChange={(date) => setEndDate(date)}
             className="date-picker"
-            popperPlacement="bottom"
+            popperPlacement="bottom-start"
+            popperClassName="custom-datepicker-popper" // 사용자 정의 클래스 추가
           />
         </div>
       </div>

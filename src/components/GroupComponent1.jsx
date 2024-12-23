@@ -1,5 +1,4 @@
 import { useState, useCallback } from "react";
-import { useNavigate } from "react-router-dom"; // useNavigate 훅을 임포트
 import Root from "./Root";
 import PortalPopup from "./PortalPopup";
 import PropTypes from "prop-types";
@@ -9,8 +8,6 @@ const GroupComponent1 = ({ className = "" }) => {
   const [isFrameOpen, setFrameOpen] = useState(false);
   const [name, setName] = useState("");  // 이름 상태
   const [studentId, setStudentId] = useState("");  // 학번 상태
-
-  const navigate = useNavigate(); // useNavigate 훅을 사용하여 navigate 함수 생성
 
   const openFrame = useCallback(() => {
     setFrameOpen(true);
@@ -26,11 +23,6 @@ const GroupComponent1 = ({ className = "" }) => {
 
   const handleStudentIdChange = (event) => {
     setStudentId(event.target.value); // 학번 변경 함수
-  };
-
-  // 회원 확인 버튼 클릭 시 홈 페이지로 이동하는 함수
-  const handleLoginClick = () => {
-    navigate("/"); // Home 페이지로 이동
   };
 
   return (
@@ -85,7 +77,7 @@ const GroupComponent1 = ({ className = "" }) => {
           </div>
         </div>
         <div className="input-fields1">
-          <div className="button-login2" onClick={handleLoginClick}>
+          <div className="button-login2">
             <div className="div41">회원 확인</div>
           </div>
           <div className="wrapper6" onClick={openFrame}>
