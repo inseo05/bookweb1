@@ -1,13 +1,20 @@
 import { useMemo } from "react";
+import { useNavigate } from "react-router-dom"; // useNavigate 추가
 import PropTypes from "prop-types";
 import "./GroupComponent.css";
 
 const GroupComponent = ({ className = "", frameDivHeight }) => {
+  const navigate = useNavigate(); // useNavigate 훅 초기화
+
   const frameDiv2Style = useMemo(() => {
     return {
       height: frameDivHeight,
     };
   }, [frameDivHeight]);
+
+  const handleRentClick = () => {
+    navigate("/2"); // "/2" 경로로 이동
+  };
 
   return (
     <div className={`rectangle-parent24 ${className}`}>
@@ -31,7 +38,7 @@ const GroupComponent = ({ className = "", frameDivHeight }) => {
       <div className="additional-book-actions">
         <div className="additional-action-container">
           <div className="action-buttons">
-            <div className="rectangle-parent25">
+            <div className="rectangle-parent25" onClick={handleRentClick}>
               <div className="frame-child40" />
               <div className="div31">대여하기</div>
             </div>

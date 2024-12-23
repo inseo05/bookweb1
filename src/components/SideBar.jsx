@@ -21,8 +21,8 @@ const SideBar = ({ className = "" }) => {
   }, [navigate]);
 
   const onMenuItemsContainerClick = useCallback(() => {
-    // Please sync "관리자 페이지" to the project
-  }, []);
+    navigate("/control");
+  }, [navigate]);
 
   return (
     <div className={`side-bar1 ${className}`}>

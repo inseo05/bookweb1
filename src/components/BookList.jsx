@@ -1,9 +1,16 @@
+import { useNavigate } from "react-router-dom"; // useNavigate 추가
 import GroupComponent from "./GroupComponent";
 import BookItems from "./BookItems";
 import PropTypes from "prop-types";
 import "./BookList.css";
 
 const BookList = ({ className = "" }) => {
+  const navigate = useNavigate(); // useNavigate 훅 초기화
+
+  const handleRentClick = () => {
+    navigate("/2"); // "/2" 경로로 이동
+  };
+
   return (
     <div className={`book-list2 ${className}`}>
       <div className="book-three">
@@ -40,7 +47,7 @@ const BookList = ({ className = "" }) => {
         <div className="frame-wrapper15">
           <div className="frame-parent20">
             <div className="frame-wrapper16">
-              <div className="rectangle-parent31">
+              <div className="rectangle-parent31" onClick={handleRentClick}>
                 <div className="frame-child50" />
                 <div className="div36">대여하기</div>
               </div>

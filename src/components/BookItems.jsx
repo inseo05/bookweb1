@@ -1,8 +1,15 @@
 import { useMemo } from "react";
+import { useNavigate } from "react-router-dom"; // useNavigate 추가
 import PropTypes from "prop-types";
 import "./BookItems.css";
 
 const BookItems = ({ className = "", frameDivHeight }) => {
+  const navigate = useNavigate(); // useNavigate 초기화
+
+  const handleRentClick = () => {
+    navigate("/2"); // "/2" 경로로 이동
+  };
+
   const frameDiv3Style = useMemo(() => {
     return {
       height: frameDivHeight,
@@ -32,7 +39,7 @@ const BookItems = ({ className = "", frameDivHeight }) => {
         <div className="frame-wrapper12">
           <div className="frame-parent19">
             <div className="frame-wrapper13">
-              <div className="rectangle-parent28">
+              <div className="rectangle-parent28" onClick={handleRentClick}>
                 <div className="frame-child45" />
                 <div className="div32">대여하기</div>
               </div>

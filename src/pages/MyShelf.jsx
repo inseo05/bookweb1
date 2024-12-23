@@ -1,6 +1,6 @@
 import OverdueBookItem from "../components/OverdueBookItem";
 import FrameComponent1 from "../components/FrameComponent1";
-import SideBar2 from "../components/SideBar2";
+import SideBar from "../components/SideBar";
 import "./MyShelf.css";
 
 const MyShelf = () => {
@@ -470,7 +470,7 @@ const MyShelf = () => {
       </main>
       <div className="background1">
         <img className="bg-vector-icon2" alt="" src="/bg-vector2.svg" />
-        <SideBar2 />
+        <SideBar />
       </div>
     </div>
   );
