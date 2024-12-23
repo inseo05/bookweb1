@@ -1,14 +1,9 @@
 import PropTypes from "prop-types";
-import { useNavigate } from "react-router-dom"; // useNavigate 추가
 import "./FrameComponent.css";
 
+
 const FrameComponent = ({ className = "" }) => {
-  const navigate = useNavigate(); // useNavigate 초기화
-
-  const handleRentClick = () => {
-    navigate("/2"); // "/2" 경로로 이동
-  };
-
+  
   return (
     <div className={`search-area-parent ${className}`}>
       <div className="search-area">
@@ -37,9 +32,9 @@ const FrameComponent = ({ className = "" }) => {
             </div>
           </div>
         </div>
-        <div className="rectangle-parent22" >
+        <div className="rectangle-parent22">
           <div className="frame-child36" />
-          <div className="div29"onClick={handleRentClick}>대여 가능</div>
+          <div className="div29">대여 가능</div>
           <div className="book-status-icon">
             <img
               className="browse-icon"

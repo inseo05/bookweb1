@@ -1,3 +1,9 @@
+.search-filter-dropdown:hover {
+  background-color: #0056b3;
+}
+
+
+
 .quick-search-bar-inner {
   align-self: stretch;
   width: 541px;
