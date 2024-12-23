@@ -24,6 +24,8 @@ const SideBar = ({ className = "" }) => {
     navigate("/control");
   }, [navigate]);
 
+  
+
   return (
     <div className={`side-bar1 ${className}`}>
       <div className="green-land">
