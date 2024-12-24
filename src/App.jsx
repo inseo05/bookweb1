@@ -14,6 +14,8 @@ import Frame1 from "./pages/Frame1";
 import Control from "./pages/Control";
 import RentalC from "./components/Root2" //대여완료
 import ReturnC from "./components/Root3" //반납완료
+import LoginS from "./components/Root1" //로그인성공
+
 
 
 function App() {
@@ -92,6 +94,8 @@ function App() {
       <Route path="/control" element={<Control />} />
       <Route path="/rentalcomplete" element={<RentalC />} />
       <Route path="/returncomplete" element={<ReturnC />} />
+      <Route path="/Root1" element={<LoginS />} />
+
 
 
     </Routes>
