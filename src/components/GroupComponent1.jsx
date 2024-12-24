@@ -1,4 +1,5 @@
 import { useState, useCallback } from "react";
+import { useNavigate } from "react-router-dom"; // useNavigate 추가
 import Root from "./Root";
 import PortalPopup from "./PortalPopup";
 import PropTypes from "prop-types";
@@ -6,8 +7,10 @@ import "./GroupComponent1.css";
 
 const GroupComponent1 = ({ className = "" }) => {
   const [isFrameOpen, setFrameOpen] = useState(false);
-  const [name, setName] = useState("");  // 이름 상태
-  const [studentId, setStudentId] = useState("");  // 학번 상태
+  const [name, setName] = useState(""); // 이름 상태
+  const [studentId, setStudentId] = useState(""); // 학번 상태
+
+  const navigate = useNavigate(); // useNavigate 훅 초기화
 
   const openFrame = useCallback(() => {
     setFrameOpen(true);
@@ -23,6 +26,11 @@ const GroupComponent1 = ({ className = "" }) => {
 
   const handleStudentIdChange = (event) => {
     setStudentId(event.target.value); // 학번 변경 함수
+  };
+
+  // "회원 확인" 버튼 클릭 핸들러
+  const handleMemberCheck = () => {
+    navigate("/Root1"); // /Root1 경로로 이동
   };
 
   return (
@@ -53,7 +61,6 @@ const GroupComponent1 = ({ className = "" }) => {
         <div className="frame-wrapper19">
           <div className="email-password-parent">
             <div className="email-password">
-              <div className="div">이름</div>
               <div className="input-fields">
                 <input
                   type="text"
@@ -64,7 +71,6 @@ const GroupComponent1 = ({ className = "" }) => {
               </div>
             </div>
             <div className="email-password">
-              <div className="div">{`학번 `}</div>
               <div className="frame-parent22">
                 <input
                   type="text"
@@ -77,23 +83,11 @@ const GroupComponent1 = ({ className = "" }) => {
           </div>
         </div>
         <div className="input-fields1">
-          <div className="button-login2">
+          <div className="button-login2" onClick={handleMemberCheck}>
             <div className="div41">회원 확인</div>
-          </div>
-          <div className="wrapper6" onClick={openFrame}>
-            <div className="div42">새 멤버인가요?</div>
           </div>
         </div>
       </div>
-      {isFrameOpen && (
-        <PortalPopup
-          overlayColor="rgba(113, 113, 113, 0.3)"
-          placement="Centered"
-          onOutsideClick={closeFrame}
-        >
-          <Root onClose={closeFrame} />
-        </PortalPopup>
-      )}
     </>
   );
 };

@@ -1,7 +1,15 @@
+import { useNavigate } from "react-router-dom"; // useNavigate 추가
 import PropTypes from "prop-types";
 import "./Root1.css";
 
 const Root1 = ({ className = "" }) => {
+  const navigate = useNavigate(); // useNavigate 초기화
+
+  // Login 버튼 클릭 시 호출될 함수
+  const handleLoginClick = () => {
+    navigate("/"); // "/" 경로로 이동
+  };
+
   return (
     <div className={`root ${className}`}>
       <section className="group-section">
@@ -10,9 +18,9 @@ const Root1 = ({ className = "" }) => {
         <div className="frame-wrapper7">
           <div className="frame-parent13">
             <div className="verification-wrapper">
-              <div className="verification">Verification</div>
+              <div className="verification">로그인 성공</div>
             </div>
-            <div className="thank-you">Thank you</div>
+            <div className="thank-you">감사합니다</div>
           </div>
         </div>
         <div className="vector-wrapper">
@@ -23,8 +31,9 @@ const Root1 = ({ className = "" }) => {
             src="/vector31.svg"
           />
         </div>
-        <div className="button-login">
-          <div className="login1">Login</div>
+        {/* Login 버튼 */}
+        <div className="button-login" onClick={handleLoginClick}>
+          <div className="login1">Home</div>
         </div>
       </section>
     </div>
